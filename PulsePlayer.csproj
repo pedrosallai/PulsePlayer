@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{340EBB52-709B-4A11-9D0B-2B1FD4E5DD0D}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>PulsePlayer</RootNamespace>
+    <AssemblyName>PulseAthlete</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <IOSDebuggerPort>23020</IOSDebuggerPort>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <IOSDebuggerPort>18414</IOSDebuggerPort>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\optimal zone bpm.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\optimal zone bpm.imageset\optimal zone bpm.png" />
+    <ImageAsset Include="Assets.xcassets\profile pic.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\profile pic.imageset\rugby.png" />
+    <ImageAsset Include="Assets.xcassets\heart graphic.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\heart graphic.imageset\medical-icon.png" />
+    <ImageAsset Include="Assets.xcassets\add button.imageset\addbutton.png" />
+    <ImageAsset Include="Assets.xcassets\add button.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\logout button.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\logout button.imageset\logoutbutton.png" />
+    <ImageAsset Include="Assets.xcassets\bpm.imageset\bpm.png" />
+    <ImageAsset Include="Assets.xcassets\bpm.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\bpm high.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\bpm high.imageset\bpmhigh.png" />
+    <ImageAsset Include="Assets.xcassets\Image-1.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Image-1.imageset\plainbackground.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Models\" />
+    <Folder Include="ViewControllers\" />
+    <Folder Include="Assets.xcassets\optimal zone bpm.imageset\" />
+    <Folder Include="Assets.xcassets\profile pic.imageset\" />
+    <Folder Include="Assets.xcassets\heart graphic.imageset\" />
+    <Folder Include="Assets.xcassets\add button.imageset\" />
+    <Folder Include="Assets.xcassets\logout button.imageset\" />
+    <Folder Include="Assets.xcassets\background.imageset\" />
+    <Folder Include="Assets.xcassets\bpm.imageset\" />
+    <Folder Include="Assets.xcassets\bpm high.imageset\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="Main.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Models\Team.cs" />
+    <Compile Include="Models\Account.cs" />
+    <Compile Include="ViewControllers\AddAthlete.cs" />
+    <Compile Include="ViewControllers\AddAthlete.designer.cs">
+      <DependentUpon>AddAthlete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\TeamTableSource.cs" />
+    <Compile Include="ViewControllers\Login.cs" />
+    <Compile Include="ViewControllers\Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\MainMenu.cs" />
+    <Compile Include="ViewControllers\MainMenu.designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\RealTimeHR.cs" />
+    <Compile Include="ViewControllers\RealTimeHR.designer.cs">
+      <DependentUpon>RealTimeHR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Register.cs" />
+    <Compile Include="ViewControllers\Register.designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\TeamTableCell.cs" />
+    <Compile Include="Resources\TeamTableCell.designer.cs">
+      <DependentUpon>TeamTableCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\HRZoneCalculation.cs" />
+    <Compile Include="ViewControllers\HRZoneCalculation.designer.cs">
+      <DependentUpon>HRZoneCalculation.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>
